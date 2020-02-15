@@ -37,11 +37,11 @@
          <!-- tombol menu dan pencarian untuk mobile -->
 
          <ul class="right hide-on-med-and-down">
-            <li class="active"><a href="Beranda.html"><i class="material-icons right">store</i>Beranda</a></li>
-            <li><a href="badges.html"><i class="material-icons right">view_list</i>Kategori</a></li>
-            <li><a href="collapsible.html"><i class="material-icons right">dashboard</i>Produk</a></li>
-            <li><a href="collapsible.html"><i class="material-icons right">payment</i>Konfirmasi</a></li>
-            <li><a href="collapsible.html"><i class="material-icons right">shopping_basket</i>Keranjang <span class="new badge yellow" data-badge-caption="item">4</span></a></li>
+            <li><a href="<?= site_url('/') ?>"><i class="material-icons right">store</i>Beranda</a></li>
+            <li><a href="<?= site_url('kategori') ?>"><i class="material-icons right">view_list</i>Kategori</a></li>
+            <li><a href="<?= site_url('produk') ?>"><i class="material-icons right">dashboard</i>Produk</a></li>
+            <li><a href="<?= site_url('konfrimasi') ?>"><i class="material-icons right">payment</i>Konfirmasi</a></li>
+            <li><a href="<?= site_url('keranjang') ?>"><i class="material-icons right">shopping_basket</i>Keranjang <span class="new badge yellow" data-badge-caption="item">4</span></a></li>
             <li><a href="#" id="btn-search-nav"><i class="material-icons right">search</i>Pencarian</a></li>
          </ul>
       </div>

@@ -182,45 +182,6 @@
 
 <?php $this->load->view('templates/footer_front') ?>
 
-<!-- custom javasript -->
-<script>
-	$(document).ready(function() {
-		$('.sidenav').sidenav();
-
-		$('.carousel.carousel-slider').carousel({
-			duration: 10,
-			fullWidth: true,
-			indicators: true,
-		});
-
-		$('#btn-search-nav').click(function(e) {
-			e.preventDefault();
-			$('#search-nav').fadeIn();
-			$('#main-nav').hide();
-			$('#search').focus();
-		});
-
-		$('#btn-search-mobile').click(function(e) {
-			e.preventDefault();
-			$('#search-nav').fadeIn();
-			$('#main-nav').hide();
-			$('#search').focus();
-		});
-
-		$('#cls-btn-search-nav').click(function(e) {
-			e.preventDefault();
-			$('#search-nav').hide();
-			$('#main-nav').fadeIn();
-		});
-
-		$('.btn-backTop').click(function(e) {
-			e.preventDefault();
-			$("html, body").animate({
-				scrollTop: 0
-			}, 500);
-		});
-	});
-</script>
 </body>
 
 </html>

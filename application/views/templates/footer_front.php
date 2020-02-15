@@ -81,3 +81,44 @@
 <!--JavaScript at end of body for optimized loading-->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- custom javasript -->
+<script>
+   $(document).ready(function() {
+      $('.sidenav').sidenav();
+
+      $('.carousel.carousel-slider').carousel({
+         fullWidth: true,
+         indicators: true,
+      });
+      setInterval(function() {
+         $('.carousel.carousel-slider').carousel('next');
+      }, 2000);
+
+      $('#btn-search-nav').click(function(e) {
+         e.preventDefault();
+         $('#search-nav').fadeIn();
+         $('#main-nav').hide();
+         $('#search').focus();
+      });
+
+      $('#btn-search-mobile').click(function(e) {
+         e.preventDefault();
+         $('#search-nav').fadeIn();
+         $('#main-nav').hide();
+         $('#search').focus();
+      });
+
+      $('#cls-btn-search-nav').click(function(e) {
+         e.preventDefault();
+         $('#search-nav').hide();
+         $('#main-nav').fadeIn();
+      });
+
+      $('.btn-backTop').click(function(e) {
+         e.preventDefault();
+         $("html, body").animate({
+            scrollTop: 0
+         }, 500);
+      });
+   });
+</script>
