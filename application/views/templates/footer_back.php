@@ -8,15 +8,15 @@
    <div class="modal-dialog" role="document">
       <div class="modal-content">
          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Konfirmasi keluar ?</h5>
             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                <span aria-hidden="true">×</span>
             </button>
          </div>
-         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+         <div class="modal-body">silakan pilih tombol "Keluar" di bawah ini jika ingin mengakhiri sesi anda</div>
          <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
+            <a class="btn btn-primary" href="<?= site_url('seller/auth/logout') ?>">Keluar</a>
          </div>
       </div>
    </div>
@@ -34,6 +34,9 @@
 
 <!-- Page level plugins -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" crossorigin="anonymous"></script>
 
 <!-- Page level custom scripts -->
 <script src="https://cdn.jsdelivr.net/npm/startbootstrap-sb-admin-2@4.0.7/js/demo/chart-area-demo.js" crossorigin="anonymous"></script>
@@ -41,6 +44,8 @@
 
 <!-- owl caraousel -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous"></script>
+
+
 
 <!-- jam digital -->
 <script>
@@ -61,4 +66,18 @@
       // document.write(tanggal+" "+arrbulan[bulan]+" "+tahun+" | "+jam+" : "+menit+" : "+detik);
       document.getElementById("jam-digital").innerHTML = arrhari[hari] + ", " + tanggal + " " + arrbulan[bulan] + " " + tahun + " <strong>/</strong> " + jam + " : " + menit + " : " + detik;
    }
+
+   $(".custom-file-input").on("change", function() {
+      var fileName = $(this).val().split("\\").pop();
+      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+   });
+
+   $('.dataTable').DataTable({
+      "processing": true,
+      "serverside": true,
+      "ordering": false,
+      "language": {
+         "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Indonesian.json"
+      }
+   });
 </script>

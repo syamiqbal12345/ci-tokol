@@ -75,10 +75,10 @@
             <a href="#name"><span class="white-text name"><?= TITLE ?></span></a>
          </div>
       </li>
-      <li><a href="Beranda.html"><i class="material-icons">store</i>Beranda</a></li>
-      <li><a href="badges.html"><i class="material-icons">view_list</i>Kategori</a></li>
-      <li><a href="collapsible.html"><i class="material-icons">dashboard</i>Produk</a></li>
-      <li><a href="collapsible.html"><i class="material-icons">payment</i>Konfirmasi</a></li>
-      <li><a href="collapsible.html"><i class="material-icons">shopping_basket</i>Keranjang <span class="new badge blue" data-badge-caption="item">4</span></a></li>
+      <li><a href="<?= site_url('/') ?>"><i class="material-icons">store</i>Beranda</a></li>
+      <li><a href="<?= site_url('/kategori') ?>"><i class="material-icons">view_list</i>Kategori</a></li>
+      <li><a href="<?= site_url('/produk') ?>"><i class="material-icons">dashboard</i>Produk</a></li>
+      <li><a href="<?= site_url('/konfirmasi') ?>"><i class="material-icons">payment</i>Konfirmasi</a></li>
+      <li><a href="<?= site_url('/keranjang') ?>"><i class="material-icons">shopping_basket</i>Keranjang <span class="new badge blue" data-badge-caption="item">4</span></a></li>
    </ul>
    <!-- navbar untuk mobile -->

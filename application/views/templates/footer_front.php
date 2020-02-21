@@ -94,6 +94,10 @@
          $('.carousel.carousel-slider').carousel('next');
       }, 2000);
 
+      $('.tabs').tabs({
+         swipeable: true
+      });
+
       $('#btn-search-nav').click(function(e) {
          e.preventDefault();
          $('#search-nav').fadeIn();
