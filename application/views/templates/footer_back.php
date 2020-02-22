@@ -49,35 +49,19 @@
 
 <!-- jam digital -->
 <script>
-   window.setTimeout("waktu()", 1000);
+   $(document).ready(function() {
+      $(".custom-file-input").on("change", function() {
+         var fileName = $(this).val().split("\\").pop();
+         $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+      });
 
-   function waktu() {
-      arrbulan = ["Januari", "Februari", "Maret", "April", "May", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
-      arrhari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
-      date = new Date();
-      detik = date.getSeconds();
-      menit = date.getMinutes();
-      jam = date.getHours();
-      hari = date.getDay();
-      tanggal = date.getDate();
-      bulan = date.getMonth();
-      tahun = date.getFullYear();
-      setTimeout("waktu()", 1000);
-      // document.write(tanggal+" "+arrbulan[bulan]+" "+tahun+" | "+jam+" : "+menit+" : "+detik);
-      document.getElementById("jam-digital").innerHTML = arrhari[hari] + ", " + tanggal + " " + arrbulan[bulan] + " " + tahun + " <strong>/</strong> " + jam + " : " + menit + " : " + detik;
-   }
-
-   $(".custom-file-input").on("change", function() {
-      var fileName = $(this).val().split("\\").pop();
-      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-   });
-
-   $('.dataTable').DataTable({
-      "processing": true,
-      "serverside": true,
-      "ordering": false,
-      "language": {
-         "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Indonesian.json"
-      }
+      $('.dataTable').DataTable({
+         "processing": true,
+         "serverside": true,
+         "ordering": false,
+         "language": {
+            "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Indonesian.json"
+         }
+      });
    });
 </script>

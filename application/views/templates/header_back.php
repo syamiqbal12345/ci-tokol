@@ -59,13 +59,6 @@
                <span>Beranda</span>
             </a>
          </li>
-         <li class="nav-item active">
-            <a class="nav-link" href="<?= site_url('/') ?>" target="_blank">
-               <i class="fas fa-fw fa-paper-plane"></i>
-               <span>Ke Website</span>
-            </a>
-         </li>
-
          <!-- Divider -->
          <hr class="sidebar-divider">
 
@@ -129,13 +122,20 @@
                   <i class="fa fa-bars"></i>
                </button>
 
-               <!-- Topbar Search -->
-               <!-- <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"> -->
-               <div id="jam-digital"></div>
-               <!-- </form> -->
+               <!-- tanggal  -->
+               <div class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100">
+                  <?= tanggal(date('Y-m-d')) ?>
+               </div>
 
                <!-- Topbar Navbar -->
                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item dropdown no-arrow">
+                     <a class="nav-link" href="<?= site_url('/') ?>" target="_blank">
+                        <span class="mr-2 d-none d-lg-inline text-dark small">
+                           <i class="fa fa-paper-plane"></i> &nbsp; Kunjungi Website
+                        </span>
+                     </a>
+                  </li>
                   <div class="topbar-divider d-none d-sm-block"></div>
                   <!-- Nav Item - User Information -->
                   <li class="nav-item dropdown no-arrow">
@@ -162,8 +162,6 @@
                         </a>
                      </div>
                   </li>
-
                </ul>
-
             </nav>
             <!-- End of Topbar -->
