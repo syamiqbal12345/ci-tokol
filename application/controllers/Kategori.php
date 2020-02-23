@@ -6,7 +6,8 @@ class Kategori extends CI_Controller
 {
    public function index()
    {
-      $this->load->view('v_kategori');
+      $parsing['kategoris'] = $this->kategori_model->get_all();
+      $this->load->view('v_kategori', $parsing);
    }
 }
 

@@ -93,7 +93,7 @@
          <!-- Nav Item - Dashboard -->
          <li class="nav-item active">
             <a class="nav-link" href="<?= site_url('seller/informasi') ?>">
-               <i class="fas fa-fw fa-truck"></i>
+               <i class="fas fa-fw fa-tags"></i>
                <span>Informasi</span>
             </a>
          </li>
