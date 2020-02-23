@@ -37,6 +37,7 @@
 <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote-bs4.min.js" crossorigin="anonymous"></script>
 
 <!-- Page level custom scripts -->
 <script src="https://cdn.jsdelivr.net/npm/startbootstrap-sb-admin-2@4.0.7/js/demo/chart-area-demo.js" crossorigin="anonymous"></script>
@@ -45,9 +46,7 @@
 <!-- owl caraousel -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous"></script>
 
-
-
-<!-- jam digital -->
+<!-- script tambahan untuk plugin -->
 <script>
    $(document).ready(function() {
       $(".custom-file-input").on("change", function() {
@@ -62,6 +61,10 @@
          "language": {
             "url": "https://cdn.datatables.net/plug-ins/1.10.20/i18n/Indonesian.json"
          }
+      });
+
+      $('.summernote').summernote({
+         height: 150 // set editor height
       });
    });
 </script>

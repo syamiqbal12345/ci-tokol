@@ -20,6 +20,7 @@
    <!-- Custom styles for this template-->
    <link href="https://cdn.jsdelivr.net/npm/startbootstrap-sb-admin-2@4.0.7/css/sb-admin-2.min.css" rel="stylesheet">
    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote-bs4.min.css" rel="stylesheet">
 
    <!-- owl carousel -->
    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
@@ -131,7 +132,7 @@
                <ul class="navbar-nav ml-auto">
                   <li class="nav-item dropdown no-arrow">
                      <a class="nav-link" href="<?= site_url('/') ?>" target="_blank">
-                        <span class="mr-2 d-none d-lg-inline text-dark small">
+                        <span class="text-white badge badge-pill badge-warning">
                            <i class="fa fa-paper-plane"></i> &nbsp; Kunjungi Website
                         </span>
                      </a>
