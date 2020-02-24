@@ -62,7 +62,7 @@
                   <ul class="collection hoverable">
                      <li class="collection-item avatar valign-wrapper">
                         <img src="<?= base_url('upload/kategori/' . $kategori->gambar_kat) ?>" alt="" class="circle">
-                        <a href="#"><span class="title"><?= $kategori->nama_kat ?></span></a>
+                        <a href="<?= site_url('kategori/detail/' . $kategori->slug_kat) ?>"><span class="title"><?= $kategori->nama_kat ?></span></a>
                      </li>
                   </ul>
                </div>
@@ -84,7 +84,7 @@
                   <span class="card-title">
                      <img src="<?= base_url('upload/kategori/' . $kategori->gambar_kat) ?>" alt="" class="circle responsive-img">
                   </span>
-                  <center><a href="" class="center-align"><?= $kategori->nama_kat ?></a></center>
+                  <center><a href="<?= site_url('kategori/detail/' . $kategori->slug_kat) ?>" class="center-align"><?= $kategori->nama_kat ?></a></center>
                </div>
             </div>
          </div>
